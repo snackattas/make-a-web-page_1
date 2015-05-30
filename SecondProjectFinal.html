@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My notes</title>
+	<link rel="stylesheet" href="Style.css">
+</head>
+
+<body class="bodycolor">
+	<div class="header">
+		<img class="dog" src="http://blog-photos.dogvacay.com/wp-content/uploads/2012/03/Puppy.jpg" alt="Image seems to be broken">
+	</div>
+	
+	<div class="lesson">
+		<h1>Lesson 0: Basics of the Web and HTML</h1>
+		<div class="concept">
+			<h2>HTML</h2>
+			<div class="information">
+				<p>
+					HTML stands for hypertext markup language.
+				<br>
+					Basically, the internet makes requests to servers via HTTP protocol. 
+					HTTP sends back info to the internet/you in your browser.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<h2>Structure of HTML</h2>
+			<div class="information">
+				<p>
+					HTML is made up of <em>tags</em> and <em>attributes</em>.  
+					Tags that only require an opening tag are called void tags.  
+					Otherwise, most tags require both an opening and closing tag.  
+				<br>
+					A complete tag is referred to as an attribute.
+				</p>
+				<p>
+					There are 2 ways to classify tags: 
+				</p>	
+				<ol>
+					<li>inline tags</li>
+					<li>block tags</li>
+				</ol>
+				<p>
+					<b>Inline tags</b> perform their function directly on the text, with no additional formatting.
+				<br>
+					<b>Block tags</b> put an invisible box around text.  
+					That way CSS or JS elements can refer to the entire region, not just the literal text.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<h2>Links</h2>
+			<div class="information">
+				<p>
+					This is an example of a hyperlink to <a href="http://www.google.com">google</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="lesson">
+		<h1>Lesson 1: CSS</h1>
+		<div class="concept">
+			<h2>CSS Philosophy</h2>
+			<div class="information">
+				<p>
+					CSS stands for <b>Cascading Style Sheets</b>.
+				<br>
+					CSS can be said to have a heirarchical structure.  
+					The more specific rule gets applied is the one that <b>MOST</b> describes the elements.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<h2>CSS Syntax</h2>
+			<div class="information">
+				<p>
+					CSS uses “selectors”.  That's CSS for elements.
+					Elements have a <em>property</em> and a <em>value</em>.
+				<br>
+					CSS selectors can apply to tags, as well as classes and IDs. 
+					When using CSS to refer to a class, the selector must be prefixed with a period.
+				</p>
+				<p>
+					You can use CSS in HTML (although not advised). Like this:
+				</p>
+				<br>
+				<p class="code">
+					<code>
+						&lt;style&gt;
+						<br>
+						<span class="space2">.description {</span>
+						<span class="space5">color: <span class="color-red">red</span>;</span>
+						<br>
+						<span class="space2">}</span>
+						<br>		
+						&lt;/style&gt;
+					</code>
+				</p>
+			</div>
+			<div class="information">
+				<h2>Avoiding Repition in CSS</h2>
+				<p>
+					Because CSS is heirarchical, it's code can be written in such a way to <em>minimize repitition</em>.
+				<br>
+					A couple lines of CSS code can be applied to ALL of the instances 
+					that the tag/class/id are used in the HTML document.
+					So if HTML is written intelligently, with tags/classes/ids consistently applied,
+					the CSS to format that HTML document can be very simple, but will affect the web page widely.
+				</p>
+			</div>
+		</div>
+	</div> 
+</body>
+</html>
